@@ -24,15 +24,105 @@ body {
   max-width: 1030px !important;
 }
 
-.block {
-  padding: 50px;
+.checkout-container {
   border: 1px solid #EEEFEF;
 }
+
+.block {
+  padding: 50px;
+  border-bottom: 2px solid #F3F3F3;
+  &.border-left {
+    border-left: 1px solid #EEEFEF !important;
+  }
+}
+
+.details-block {
+  @media (min-width: 575px) {
+    flex: 0 0 630px;
+    max-width: 630px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+    label {
+      color: #7E7E7E;
+      line-height: 21px;
+      font: {
+        size: 14px;
+        weight: 500;
+      }
+    }
+    .form-control {
+      border-color: #E9E9E9;
+      height: 50px;
+      border-radius: 6px;
+      padding: 0 17px;
+      color: #7E7E7E;
+      font-family: "Montserrat";
+      font-size: 14px;
+      &::placeholder {
+        color: #b3b3b3;
+        opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: #b3b3b3;
+      }
+      
+      &::-ms-input-placeholder {
+        color: #b3b3b3;
+      }
+    }
+  }
+}
+
+.offer-details-block {
+  border-bottom: 0;
+  @media (min-width: 575px) {
+    flex: 0 0 370px;
+    max-width: 370px;
+  }
+}
+
 
 .title {
   font: {
     weight: 600;
     size: 18px;
+  }
+}
+
+.offer-details {
+  p {
+    color: #7E7E7E;
+    font: {
+      size: 14px;
+      weight: 500;
+    }
+    line-height: 22px;
+  }
+  .features-list {
+    .list-item {
+      display: -webkit-box;
+      &::before {
+        content: '';
+        display: flex;
+        width: 7px;
+        height: 7px;
+        background: $primaryColor;
+        border-radius: 100px;
+        margin-top: 6px;
+        margin-right: 13px;
+      }
+      span {
+        color: #989898;
+        font: {
+          size: 13px;
+          weight: 300;
+        }
+        line-height: 21px;
+      }
+    }
   }
 }
 
@@ -48,4 +138,18 @@ body {
 
 .content {
   flex: 1;
+}
+
+.footer {
+  .footer-info {
+    border-top: 1px solid #EEF1F6;
+    span {
+      color: #282828;
+      font: {
+        size: 15px;
+        weight: 300;
+      }
+      line-height: 23px;
+    }
+  }
 }
