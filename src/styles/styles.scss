@@ -74,7 +74,53 @@ body {
       }
     }
   }
+
+  .custom-control {
+    line-height: 26px;
+    border-top: 1px solid #F4F4F4;
+    padding: 20px 20px 20px 30px;
+    .custom-control-label {
+      &::before {
+        border: #E1E1E1 solid 2px;
+        border-radius: 4px;
+        width: 18px;
+        height: 18px;
+      }
+      &::after {
+        top: .3rem;
+        left: -1.4rem;
+      }
+      color: #7E7E7E;
+      font: {
+        size: 13px;
+        weight: 500;
+      }
+    }
+    input {
+      left: .44rem;
+      top: 1.4rem;
+    }
+    input:focus {
+      border: 0;
+    }
+    .custom-control-input:checked~.custom-control-label::before {
+      color: #fff;
+      border-color: $primaryColor;
+      background-color: $primaryColor;
+    }
+  }
+
+  input:focus + label::before {
+    outline: none;
+    outline: 0px !important;
+    -webkit-appearance:none !important;
+  
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
 }
+
 
 .offer-details-block {
   border-bottom: 0;
