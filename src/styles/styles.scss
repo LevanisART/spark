@@ -119,6 +119,57 @@ body {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
+
+  .order-summary-table {
+    border: 1px solid #F4F4F4;
+    border-radius: 8px;
+    overflow: hidden;
+    .thead-light {
+      th {
+        color: #7E7E7E;
+        background-color: #F8F8F8;
+        border: none;
+        font: {
+          weight: 600;
+          size: 13px;
+        }
+      }
+    }
+    td {
+      color: #5d5b6b;
+      font: {
+        weight: 300;
+        size: 13px;
+      }
+    }
+    td, th {
+      border-color: #F4F4F4;
+      padding: 1.2rem 1.5rem;
+    }
+    .total td {
+      color: #252430;
+      font-weight: 600;
+    }
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #c73025;
+    border-color: #c73025;
+  }
+  .btn-primary:hover {
+      color: #fff;
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+  }
 }
 
 
