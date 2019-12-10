@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://levanisart.github.io/checkout-page/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "deploy": "gh-pages"
   },
   "author": "",
   "license": "ISC",
@@ -26,5 +28,8 @@
     "last 3 version",
     "> 1%",
     "IE 10"
-  ]
+  ],
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }

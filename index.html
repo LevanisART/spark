@@ -27,48 +27,48 @@
                 <div class="d-flex flex-column">
                   <h2 class="title">Your Details</h2>
   
-                  <div class="mt-4">
-                    <div class="form-group d-flex align-items-center">
+                  <div class="form-groups mt-4">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="CompanyName">Company Name</label>
                       <input type="text" placeholder="Company Name" class="form-control col-md-7" id="CompanyName">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="FirstName">Owner First Name</label>
                       <input type="text" placeholder="First Name" class="form-control col-md-7" id="FirstName">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="LastName">Owner Last Name</label>
                       <input type="text" placeholder="Last Name" class="form-control col-md-7" id="LastName">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="Email">E-mail address</label>
                       <input type="email" placeholder="E-mail address" class="form-control col-md-7" id="Email">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="Phone">Phone Number</label>
                       <input type="text" placeholder="Phone Number" class="form-control col-md-7" id="Phone">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="Phone">Mobile Number</label>
                       <input type="text" placeholder="Mobile Number" class="form-control col-md-7" id="Mobile">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="Address">Address</label>
                       <input type="text" placeholder="Address" class="form-control col-md-7" id="Address">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="City">City</label>
                       <input type="text" placeholder="City" class="form-control col-md-7" id="City">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="StateProvinceRegion">State / Province / Region</label>
                       <input type="text" placeholder="State" class="form-control col-md-7" id="StateProvinceRegion">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="PostalCode">Postal Code</label>
                       <input type="text" placeholder="Postal Code" class="form-control col-md-7" id="PostalCode">
                     </div>
-                    <div class="form-group mb-0 d-flex align-items-center">
+                    <div class="form-group mb-0 d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="Country">Country</label>
                       <select class="form-control col-md-7" id="Country">
                         <option value=""></option>
@@ -425,7 +425,7 @@
                   <div class="mt-4">
                     <div class="form-group mb-0 d-flex align-items-center">
                       <input type="text" placeholder="Coupon Code" class="form-control col-md-9" id="CouponCode">
-                      <div class="col-md-3 pl-4 pr-2">
+                      <div class="col-sm-3 pl-4 pr-2">
                         <button type="submit" class="btn btn-primary w-100">Apply</button>
                       </div>
                     </div>
@@ -433,33 +433,30 @@
                 </div>
               </div>
 
-              <div class="block col-12 border-0">
+              <div class="block payment-information col-12 border-0">
                 <div class="d-flex flex-column">
                   <h2 class="title">Enter Your Payment Information</h2>
   
                   <div class="mt-4">
-
-
-
                     <div class="mb-4 pb-1">
-                      <input class="checkbox-btn" name="checkbox-collection" id="checkbox-1" type="radio" value="49">
-                      <label class="checkbox-label" for="checkbox-1" tabindex="1">
-                        <div class="d-flex flex-column">  
+                      <input class="radio-btn" name="radio-collection" id="radio-1" type="radio" value="49">
+                      <label class="radio-label" for="radio-1" tabindex="1">
+                        <div class="d-flex flex-column mr-2">  
                           <span>Bank Card</span>
                           <p>Visa, MasterCard, Amex and Discover</p>
                         </div>
                         <div class="d-flex">
-                          <img class="ml-2" src="images/visa.svg" alt="">
-                          <img class="ml-2" src="images/mastercard.svg" alt="">
-                          <img class="ml-2" src="images/amex.svg" alt="">
-                          <img class="ml-2" src="images/discover.svg" alt="">
+                          <img src="images/visa.svg" alt="">
+                          <img class="py-2 ml-2" src="images/mastercard.svg" alt="">
+                          <img class="py-2 ml-2" src="images/amex.svg" alt="">
+                          <img class="py-2 ml-2" src="images/discover.svg" alt="">
                         </div>
                       </label>
-                      <input class="checkbox-btn" name="checkbox-collection" id="checkbox-3" type="radio" value="349">
-                      <label class="checkbox-label" for="checkbox-3" tabindex="3">
-                        <span>Paypal</span>
+                      <input class="radio-btn" name="radio-collection" id="radio-2" type="radio" value="349">
+                      <label class="radio-label" for="radio-2" tabindex="2">
+                        <span class="py-2 mr-2">Paypal</span>
                         <div>
-                          <img class="ml-2" src="images/paypal.svg" alt="">
+                          <img src="images/paypal.svg" alt="">
                         </div>
                       </label>
                     </div>
@@ -468,15 +465,15 @@
 
 
 
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="CardNumber">Card Number</label>
                       <input type="text" placeholder="Card Number" class="form-control col-md-7" id="CardNumber">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="CVCNumber">CVC Number</label>
                       <input type="text" placeholder="CVC Number" class="form-control col-md-7" id="CVCNumber">
                     </div>
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4">Expires</label>
                       <div class="d-flex col-md-7 px-0">
                         <div class="col-md-6 pl-0">
@@ -510,11 +507,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group mb-0 d-flex align-items-start">
+                    <div class="form-group mb-0 d-flex align-items-start flex-wrap">
                       <label class="col-md-4 mt-2 pl-0 pr-4" for="Comments">Comments</label>
                       <textarea class="form-control col-md-7 py-2" id="Comments"></textarea>
                     </div>
-                    <div class="w-100 mt-4 pt-2 pl-1 pr-5">
+                    <div class="buy-button w-100 mt-4 pt-2 pl-1 pr-5">
                       <button type="submit" class="btn btn-primary w-100">Buy Now</button>
                     </div>
                   </div>
@@ -581,9 +578,9 @@
 
     <footer class="footer mt-5 pt-3">
       <div class="footer-info bg-white py-4">
-        <div class="container my-2 d-flex justify-content-between flex-wrap">
-          <span class="mr-3">Copyright © 2019, SPARK MINDS <br> 10630 Wiles Road Coral Springs, FL 33076</span>
-          <span class="mr-4">http://sparkmembership.com <br> success@sparkmembership.com</span>
+        <div class="container d-flex justify-content-between flex-wrap">
+          <span class="my-2 mr-4">Copyright © 2019, SPARK MINDS <br> 10630 Wiles Road Coral Springs, FL 33076</span>
+          <span class="my-2">http://sparkmembership.com <br> success@sparkmembership.com</span>
         </div>
       </div>
     </footer>
