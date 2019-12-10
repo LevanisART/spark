@@ -21,7 +21,7 @@
 
       <main class="content mt-5 pt-2 container">
         <div class="checkout-container bg-white">
-          <div class="d-flex">
+          <div class="d-flex flex-wrap">
             <div class="details-block">
               <div class="block col-12">
                 <div class="d-flex flex-column">
@@ -423,13 +423,102 @@
                   <h2 class="title">Do you have a Coupon to apply?</h2>
   
                   <div class="mt-4">
-                    <div class="form-group d-flex align-items-center">
+                    <div class="form-group mb-0 d-flex align-items-center">
                       <input type="text" placeholder="Coupon Code" class="form-control col-md-9" id="CouponCode">
                       <div class="col-md-3 pl-4 pr-2">
                         <button type="submit" class="btn btn-primary w-100">Apply</button>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div class="block col-12 border-0">
+                <div class="d-flex flex-column">
+                  <h2 class="title">Enter Your Payment Information</h2>
+  
+                  <div class="mt-4">
+
+
+
+                    <div class="mb-4 pb-1">
+                      <input class="checkbox-btn" name="checkbox-collection" id="checkbox-1" type="radio" value="49">
+                      <label class="checkbox-label" for="checkbox-1" tabindex="1">
+                        <div class="d-flex flex-column">  
+                          <span>Bank Card</span>
+                          <p>Visa, MasterCard, Amex and Discover</p>
+                        </div>
+                        <div class="d-flex">
+                          <img class="ml-2" src="images/visa.svg" alt="">
+                          <img class="ml-2" src="images/mastercard.svg" alt="">
+                          <img class="ml-2" src="images/amex.svg" alt="">
+                          <img class="ml-2" src="images/discover.svg" alt="">
+                        </div>
+                      </label>
+                      <input class="checkbox-btn" name="checkbox-collection" id="checkbox-3" type="radio" value="349">
+                      <label class="checkbox-label" for="checkbox-3" tabindex="3">
+                        <span>Paypal</span>
+                        <div>
+                          <img class="ml-2" src="images/paypal.svg" alt="">
+                        </div>
+                      </label>
+                    </div>
+
+
+
+
+
+                    <div class="form-group d-flex align-items-center">
+                      <label class="col-md-4 pl-0 pr-4" for="CardNumber">Card Number</label>
+                      <input type="text" placeholder="Card Number" class="form-control col-md-7" id="CardNumber">
+                    </div>
+                    <div class="form-group d-flex align-items-center">
+                      <label class="col-md-4 pl-0 pr-4" for="CVCNumber">CVC Number</label>
+                      <input type="text" placeholder="CVC Number" class="form-control col-md-7" id="CVCNumber">
+                    </div>
+                    <div class="form-group d-flex align-items-center">
+                      <label class="col-md-4 pl-0 pr-4">Expires</label>
+                      <div class="d-flex col-md-7 px-0">
+                        <div class="col-md-6 pl-0">
+                          <select class="form-control" id="ExpirationMonth">
+                            <option value="" selected="selected">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                          </select>
+                        </div>
+
+                        <div class="col-md-6 pr-0">
+                          <select class="form-control" id="ExpirationYear">
+                            <option value="" selected="selected">Year</option>
+                            <option value="1">2024</option>
+                            <option value="2">2023</option>
+                            <option value="3">2022</option>
+                            <option value="4">2021</option>
+                            <option value="5">2020</option>
+                            <option value="6">2019</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mb-0 d-flex align-items-start">
+                      <label class="col-md-4 mt-2 pl-0 pr-4" for="Comments">Comments</label>
+                      <textarea class="form-control col-md-7 py-2" id="Comments"></textarea>
+                    </div>
+                    <div class="w-100 mt-4 pt-2 pl-1 pr-5">
+                      <button type="submit" class="btn btn-primary w-100">Buy Now</button>
+                    </div>
+                  </div>
+  
                 </div>
               </div>
             </div>

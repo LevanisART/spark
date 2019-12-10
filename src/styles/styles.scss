@@ -38,8 +38,8 @@ body {
 
 .details-block {
   @media (min-width: 575px) {
-    flex: 0 0 630px;
-    max-width: 630px;
+    flex: 0 0 628px;
+    max-width: 628px;
   }
 
   .form-group {
@@ -158,6 +158,8 @@ body {
     border-color: $primaryColor;
     height: 50px;
     border-radius: 8px;
+    font-family: "Montserrat";
+    font-size: 14px;
   }
 
   .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -171,6 +173,93 @@ body {
       border-color: $primaryColor;
   }
 }
+
+
+
+.checkbox-label {
+  align-items: center;
+  background-color: none;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 20px 20px 20px 65px;
+  position: relative;
+  transition: .3s ease all;
+  width: 100%;
+}
+.checkbox-label span:last-child {
+  padding: 0 0 0 20px;
+}
+.checkbox-label:hover {
+  background-color: rgba(255,255,255,0.2);   
+}
+.checkbox-label:focus {
+  outline: none;
+}
+.checkbox-label:before {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  content:'';
+  height: 21px;
+  left: 20px;
+  position: absolute;
+  transition: .3s ease background-color;
+  width: 21px;
+}
+.checkbox-label span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #3C464E;
+  font: {
+    weight: 500;
+    size: 15px;
+  }
+}
+.checkbox-label p {
+  display: block;
+  font-weight: 500;
+  color: #989898;
+  margin-top: 10px;
+  font: {
+    size: 13px;
+  }
+}
+.checkbox-btn {
+  position: absolute;
+  visibility: hidden;
+}
+.checkbox-btn:checked + .checkbox-label {
+  background-color: white;
+  border-color: #a4d2ff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.checkbox-btn:checked + .checkbox-label:before {
+  background-color: #2E8FFF;
+  background-image: url('data:image/svg+xml;utf8,<svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3052 0.351731C10.6957 0.742255 10.6957 1.37542 10.3052 1.76595L5.12134 6.94977C4.90417 7.16694 4.61195 7.26334 4.32816 7.23897C4.04454 7.26317 3.75257 7.16675 3.53554 6.94972L0.707108 4.12129C0.316584 3.73077 0.316584 3.0976 0.707108 2.70708C1.09763 2.31655 1.7308 2.31655 2.12132 2.70708L4.32846 4.91422L8.89095 0.351731C9.28147 -0.0387932 9.91464 -0.0387932 10.3052 0.351731Z" fill="white"/></svg>');
+  border-color: #2E8FFF;
+}
+
+
+@media(max-width:480px) {
+  .checkbox-label {
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .checkbox-label span:last-child {
+      padding: 10px 0 0 0;
+  }
+}
+
+
+
 
 
 .offer-details-block {
