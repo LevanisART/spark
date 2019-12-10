@@ -125,7 +125,6 @@ body {
   .order-summary-table {
     border: 1px solid #F4F4F4;
     border-radius: 8px;
-    overflow: hidden;
     .thead-light {
       th {
         color: #7E7E7E;
@@ -372,6 +371,13 @@ body {
   }
   .payment-information {
     border-bottom: 2px solid #f3f3f3 !important;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .order-summary-table table {
+    width: 340px;
   }
 }
 
