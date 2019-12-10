@@ -246,15 +246,6 @@ body {
 }
 
 
-@include media-breakpoint-down(xs) {
-  .block {
-    padding: 2rem;
-  }
-}
-
-
-
-
 .offer-details-block {
   border-bottom: 0;
   @media (min-width: 575px) {
@@ -381,5 +372,14 @@ body {
   }
   .payment-information {
     border-bottom: 2px solid #f3f3f3 !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .block {
+    padding: 2rem;
+  }
+  .offer-details-block img {
+    width: 100%;
   }
 }
