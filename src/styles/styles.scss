@@ -5,6 +5,37 @@
 
 @include scrollbars(13px, $primaryColor, #FFF);
 
+body {
+  background: $lightBg;
+}
+
+.header {
+  background: #FFF;
+  border-bottom: 1px solid #EEF1F6;
+}
+
+.logo {
+  img {
+    height: 62px;
+  }
+}
+
+.container {
+  max-width: 1030px !important;
+}
+
+.block {
+  padding: 50px;
+  border: 1px solid #EEEFEF;
+}
+
+.title {
+  font: {
+    weight: 600;
+    size: 18px;
+  }
+}
+
 .page {
   display: flex;
   min-height: 100vh;
