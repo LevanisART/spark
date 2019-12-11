@@ -362,6 +362,10 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .details-block {
+    order: 2;
+    border-bottom: 2px solid #f3f3f3 !important;
+  }
   .form-groups {
     margin-top: 2.25rem!important;
   }
@@ -374,10 +378,6 @@ body {
   .buy-button {
     padding: 0 !important;
   }
-  .payment-information {
-    border-bottom: 2px solid #f3f3f3 !important;
-  }
-
 }
 
 @media (max-width: 500px) {
