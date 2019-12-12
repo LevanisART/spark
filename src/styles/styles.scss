@@ -4,7 +4,7 @@
 @import 'fonts';
 @import 'reset';
 
-@include scrollbars(13px, $primaryColor, #FFF);
+// @include scrollbars(13px, $primaryColor, #FFF);
 
 body {
   background: $lightBg;
@@ -181,7 +181,7 @@ body {
 .radio-label {
   align-items: center;
   background-color: none;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -285,10 +285,11 @@ body {
         background: $primaryColor;
         border-radius: 100px;
         margin-top: 6px;
-        margin-right: 13px;
+        position: absolute;
+        left: 13px;
       }
       span {
-        color: #989898;
+        color: #686868;
         font: {
           size: 13px;
           weight: 300;
@@ -358,6 +359,21 @@ body {
 }
 
 @include media-breakpoint-down(sm) {
+  .block {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    &.border-left {
+      border-left: none !important;
+    }
+  }
+  .checkout-container {
+    border: none !important;
+  }
+  .content {
+    padding: 3rem 0 0 0 !important;
+    margin: 0 !important;
+  }
   .details-block, .offer-details-block {
     flex: 0 0 100%;
     max-width: 100%;
@@ -385,6 +401,17 @@ body {
 @media (max-width: 500px) {
   .order-summary-table table {
     width: 340px;
+  }
+  .coupon-code {
+    flex-wrap: wrap;
+    .coupon-code-button {
+      margin-top: 1rem;
+      padding-left: 0 !important;
+      button {
+        width: unset !important;
+        padding: 0 25px;
+      }
+    }
   }
 }
 
