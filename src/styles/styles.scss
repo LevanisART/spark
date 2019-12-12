@@ -24,7 +24,7 @@ body {
 .container {
   max-width: 1030px !important;
   &.container-smaller {
-    max-width: 920px !important;
+    max-width: 900px !important;
   }
 }
 
@@ -51,7 +51,7 @@ body {
       flex: 0 0 100%;
       max-width: 100%;
       .block {
-        padding: 70px 120px;
+        padding: 70px 100px;
       }
     }
   }
