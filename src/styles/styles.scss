@@ -23,6 +23,9 @@ body {
 
 .container {
   max-width: 1030px !important;
+  &.container-smaller {
+    max-width: 920px !important;
+  }
 }
 
 .checkout-container {
@@ -42,6 +45,15 @@ body {
   @include media-breakpoint-up(xl) {
     flex: 0 0 628px;
     max-width: 628px;
+  }
+  &.block-fluid {
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      .block {
+        padding: 70px 120px;
+      }
+    }
   }
 
   .form-group {
@@ -399,9 +411,6 @@ body {
 }
 
 @media (max-width: 500px) {
-  .order-summary-table table {
-    width: 340px;
-  }
   .coupon-code {
     flex-wrap: wrap;
     .coupon-code-button {
@@ -412,6 +421,12 @@ body {
         padding: 0 25px;
       }
     }
+  }
+}
+
+@media (max-width: 435px) {
+  .order-summary-table table {
+    width: 350px;
   }
 }
 
