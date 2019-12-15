@@ -26,13 +26,13 @@
       <main class="content mt-5 pt-2 container">
         <div class="checkout-container bg-white">
           <div class="d-flex flex-wrap">
-            <div class="details-block">
+            <div class="schedule-block w-100">
 
               <div class="block p-4 col-12">
                 <div class="block-inner p-3 m-1 d-flex flex-column">
                   <h2 class="title title-bigger">Welcome to the Scheduler</h2>
 
-                  <div class="lesson p-4 w-100">
+                  <div class="lesson w-100">
                     <form method="post" action="./?l=ss&amp;cal=UCb&amp;c=&amp;s=&amp;upID=" id="form1">
                       <div class="aspNetHidden">
                         <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="RO5FtkHmDR2gsoBPDBcqmBA66wsGmDIC1jDVPESvJiiMehu2fEhqvr+8Bnfz/TAUwoHAr+aVcC/zbLhyxaTRRSCtp8lysiTo0ZWh6vdixTGg7C1rRK0tSHUJz1QUWYdNA9FIDDIH5psYPSZwFh98uFq13Bd/RMEYMJVPuEUtpw10yKb4krprRLGeI2zMrw08Nb5emaFHbh+vZ58Nsod5vFMFVf/xjnneJiVZbjOUBNw0wdvIyr5olcXAON3ro8mp05vGjUstkhjhZcpbX9fcKN+iEw0/x48rZWgBRhzSjxyik/s93CXImvZhDjA8noM3LtBE1tlgUWv8VVRR2vhCz3zXEvAJ82bAt9L8OefP29KfdHgNR6EQn/han7hDzIFLygj6EDbnBBH01snbaIh5iZAHvQ0l/8+paCr4OuvN82i29a3DCivmTCpnNuSmhTOU6kgpMVF5T/0X5VVr6VAC+VtyoYPOYcGI/PoduRZzaUf5pGz6oSeIJCaXIzI6+7ygpL+Lfg==" />
@@ -43,122 +43,235 @@
                         <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="viiJGXgdpL85yXyQqm2aGLeqiglqAdY8PQ3uKIFa8oU5USd7v5ibxP9zc+cwfXVyFMTeZzebFLTVtjRjjYrPyQxN/82gOBFF+msHavWUKjU4S2RsiDza3TTWRDK2gXNeeco8rMiI3T6uCmBad6ZA6um/KlANsjGQaIzRdDY3dPtHQxT/DNuD/POI9Febv7H8ruDKx2dEXExqdbSYawaVIIaWfcJs1lBTSs31H2kjoB5HruqZUqnpVK3JOr6tpZCP/L7zES74uqLdcbOst7742138aoHCVsXHqZ6exYCrOjD09CsdEVloGcjw4vuL1R7PZi+cilmskj+QytvKtSGgM7wfjHo=" />
                       </div>
   
-                      <div class="container">
-                        <div class="row">
-  
-                          <div class="col">
-                            <h4 class="my-0 font-weight-normal">1st Trial Lesson</h4>
-                            <p>Let's schedule your appointment!</p>
-                            <span id="topCalendarType"></span>
-  
-                            <div id="chooseCalendar">
-                              <h4 class="my-0 font-weight-normal">Choose Schedule</h4>
-                              <br />
-                              <div style="max-width: 492px;">
-                                  
+                      <div class="d-flex flex-column">
+
+                        <div class="block p-4">
+                          <div class="lesson-info px-2">
+                            <h4 class="title lesson-title">1st Trial Lesson</h4>
+                            <p class="mt-2 pt-1">Let's schedule your appointment!</p>
+                          </div>
+                        </div>
+
+
+                        <span id="topCalendarType"></span>
+
+                        <div id="chooseCalendar">
+                          <h4 class="my-0 font-weight-normal">Choose Schedule</h4>
+                          <br />
+                          <div style="max-width: 492px;">
+                              
+                          </div>
+                        </div>
+
+                        <div id="chooseTimeZone" style="display: none;">
+                          <div class="block p-4">
+                            <div class="lesson-schedule px-2">
+                              <div class="form-groups my-4">
+
+                                <div class="form-group mb-0 d-flex align-items-center flex-wrap">                                  
+                                  <label class="col-md-3 pl-0 pr-4" for="timezone_offset">Choose Time Zone</label>
+                                  <div class="input-group col-md-6 px-0">
+                                    <div class="input-group-prepend">
+                                      <label class="input-group-text" for="timezone_offset">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C6.81885 17 5.17545 16.5015 3.77763 15.5675C2.37981 14.6335 1.29037 13.306 0.647024 11.7528C0.00367892 10.1996 -0.164644 8.49058 0.16333 6.84174C0.491305 5.1929 1.30088 3.67835 2.48962 2.4896C3.67837 1.30085 5.1929 0.491302 6.84174 0.163328C8.49058 -0.164647 10.1996 0.00368694 11.7528 0.647032C13.3059 1.29038 14.6335 2.37984 15.5675 3.77766C16.5015 5.17548 17 6.81886 17 8.5C17 10.7543 16.1044 12.9163 14.5104 14.5104C12.9163 16.1045 10.7543 17 8.5 17ZM8.5 1.41667C7.09904 1.41667 5.72958 1.8321 4.56473 2.61043C3.39988 3.38875 2.49199 4.49502 1.95587 5.78933C1.41975 7.08364 1.27945 8.50786 1.55276 9.88189C1.82607 11.2559 2.50072 12.5181 3.49134 13.5087C4.48196 14.4993 5.74406 15.1739 7.11809 15.4472C8.49212 15.7205 9.91632 15.5803 11.2106 15.0441C12.5049 14.508 13.6112 13.6001 14.3896 12.4353C15.1679 11.2704 15.5833 9.90095 15.5833 8.5C15.5833 6.62139 14.837 4.81971 13.5087 3.49132C12.1803 2.16294 10.3786 1.41667 8.5 1.41667ZM10.0796 11.1208L8.0042 9.03904C7.93188 8.96799 7.87551 8.88234 7.83887 8.78781C7.80223 8.69327 7.78613 8.59203 7.79166 8.49079V4.95834C7.79166 4.77047 7.86626 4.59031 7.99909 4.45747C8.13193 4.32463 8.31213 4.25 8.5 4.25C8.68786 4.25 8.86806 4.32463 9.0009 4.45747C9.13373 4.59031 9.20833 4.77047 9.20833 4.95834V8.1678L11.1208 10.0803C11.1891 10.1487 11.2434 10.2298 11.2803 10.3191C11.3173 10.4084 11.3363 10.5042 11.3363 10.6008C11.3362 10.6975 11.3171 10.7932 11.2801 10.8825C11.243 10.9717 11.1888 11.0529 11.1204 11.1212C11.0521 11.1895 10.9709 11.2437 10.8816 11.2807C10.7923 11.3176 10.6966 11.3366 10.5999 11.3366C10.5033 11.3366 10.4076 11.3175 10.3183 11.2805C10.229 11.2435 10.1479 11.1892 10.0796 11.1208Z" fill="#58A6FF"/></svg>
+                                      </label>
+                                    </div>
+                                    <select name="timezone_offset" id="timezone-offset" class="custom-select form-control">
+                                      <option></option>
+                                      <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                                      <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                                      <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                      <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                                      <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                      <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                                      <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                                      <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                      <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                      <option value="America/Managua">(GMT-06:00) Central America</option>
+                                      <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                                      <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                      <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                      <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                      <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                      <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                                      <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                                      <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                                      <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                                      <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                                      <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                                      <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                                      <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                                      <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                                      <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                                      <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                                      <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                                      <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                                      <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                                      <option value="Europe/London">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                                      <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                      <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                      <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                      <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                                      <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                                      <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                                      <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                                      <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                                      <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                                      <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                                      <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                                      <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                                      <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                                      <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                                      <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                                      <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                                      <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                                      <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                                      <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                                      <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                                      <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                                      <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                                      <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                                      <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                                      <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                                      <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                      <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                                      <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                                      <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                                      <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                                      <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                                      <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                                      <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                      <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                      <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                                      <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                                      <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                                      <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                                      <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                                      <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                                      <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                                      <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                                      <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                                      <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                                      <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                                      <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                                      <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                                      <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                                      <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                                      <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                                      <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                                      <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+                                    </select>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-  
-                            <div id="chooseTimeZone" style="display: none; max-width: 492px;">
-                              <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
-                              <h4 class="my-0 font-weight-normal">Choose Time Zone</h4>
-                              <br />
-  
-                              <select name="timezone_offset" id="timezone-offset" class="form-control">
-                                <option></option>
-                                <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
-                                <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
-                                <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
-                                <option value="US/Alaska">(GMT-09:00) Alaska</option>
-                                <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
-                                <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
-                                <option value="US/Arizona">(GMT-07:00) Arizona</option>
-                                <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-                                <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
-                                <option value="America/Managua">(GMT-06:00) Central America</option>
-                                <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
-                                <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-                                <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
-                                <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-                                <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
-                                <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
-                                <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
-                                <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
-                                <option value="America/Manaus">(GMT-04:00) Manaus</option>
-                                <option value="America/Santiago">(GMT-04:00) Santiago</option>
-                                <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
-                                <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
-                                <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
-                                <option value="America/Godthab">(GMT-03:00) Greenland</option>
-                                <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
-                                <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
-                                <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
-                                <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
-                                <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
-                                <option value="Europe/London">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
-                                <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
-                                <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
-                                <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
-                                <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
-                                <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
-                                <option value="Asia/Amman">(GMT+02:00) Amman</option>
-                                <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
-                                <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
-                                <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
-                                <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
-                                <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
-                                <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
-                                <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
-                                <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
-                                <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
-                                <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
-                                <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
-                                <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
-                                <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
-                                <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
-                                <option value="Asia/Baku">(GMT+04:00) Baku</option>
-                                <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
-                                <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
-                                <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
-                                <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
-                                <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
-                                <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
-                                <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
-                                <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
-                                <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
-                                <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
-                                <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
-                                <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
-                                <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
-                                <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
-                                <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
-                                <option value="Australia/Perth">(GMT+08:00) Perth</option>
-                                <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
-                                <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
-                                <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
-                                <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
-                                <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
-                                <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
-                                <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
-                                <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
-                                <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
-                                <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
-                                <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
-                                <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
-                                <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
-                                <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
-                                <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
-                              </select>
-                              <br />
-                              <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">Continue</a>
-                            </div>
-  
-                            <div id="chooseAppointment" style="display: none;">
-  
-                              <div class="row">
-                                  <!-- Mini Calendar -->
-                                  <div class="col-md-4" style="max-width: 492px;">
-                                    <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
+                          </div>
+
+                          <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
+                            <a href="javascript:;" onclick="startOver();" class="btn mr-3">BACK</a><br />
+                            <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">CONTINUE</a>
+                          </div>
+                        </div>
+
+                        <div id="chooseAppointment" style="display: none;">
+                          <div class="block p-4">
+                            <div class="lesson-schedule px-2">
+                              <div class="form-groups my-4">
+
+                                <div class="form-group mb-0 d-flex align-items-center flex-wrap">                                  
+                                  <label class="col-md-3 pl-0 pr-4" for="timezone_offset">Choose Date</label>
+                                  <div class="input-group col-md-6 px-0">
+                                    <div class="input-group-prepend">
+                                      <label class="input-group-text" for="timezone_offset">
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6224 1.95311H12.201V0.81978C12.201 0.619394 12.1226 0.427215 11.983 0.285521C11.8434 0.143827 11.6541 0.0642242 11.4568 0.0642242C11.2594 0.0642242 11.0701 0.143827 10.9306 0.285521C10.791 0.427215 10.7126 0.619394 10.7126 0.81978V1.95311H5.28747V0.81978C5.28747 0.619394 5.20906 0.427215 5.0695 0.285521C4.92994 0.143827 4.74065 0.0642242 4.54328 0.0642242C4.34591 0.0642242 4.15662 0.143827 4.01706 0.285521C3.8775 0.427215 3.7991 0.619394 3.7991 0.81978V1.95311H2.3777C1.78559 1.95311 1.21773 2.19192 0.799043 2.617C0.380357 3.04209 0.145142 3.61862 0.145142 4.21978V14.2894C0.145142 14.9908 0.419559 15.6634 0.908026 16.1593C1.39649 16.6553 2.059 16.9339 2.74979 16.9339H13.2503C13.9411 16.9339 14.6036 16.6553 15.092 16.1593C15.5805 15.6634 15.8549 14.9908 15.8549 14.2894V4.21978C15.8549 3.61862 15.6197 3.04209 15.201 2.617C14.7823 2.19192 14.2145 1.95311 13.6224 1.95311ZM13.2503 15.4228H2.74979C2.45374 15.4228 2.16981 15.3034 1.96046 15.0908C1.75112 14.8783 1.63351 14.59 1.63351 14.2894V6.8H14.3665V14.2894C14.3665 14.59 14.2489 14.8783 14.0396 15.0908C13.8302 15.3034 13.5463 15.4228 13.2503 15.4228ZM14.3665 5.28511H1.63351V4.21978C1.63351 4.01939 1.71192 3.82722 1.85148 3.68552C1.99104 3.54383 2.18033 3.46422 2.3777 3.46422H3.7991V3.876C3.7991 4.07639 3.8775 4.26857 4.01706 4.41026C4.15662 4.55195 4.34591 4.63156 4.54328 4.63156C4.74065 4.63156 4.92994 4.55195 5.0695 4.41026C5.20906 4.26857 5.28747 4.07639 5.28747 3.876V3.46422H10.7126V3.876C10.7126 4.07639 10.791 4.26857 10.9306 4.41026C11.0701 4.55195 11.2594 4.63156 11.4568 4.63156C11.6541 4.63156 11.8434 4.55195 11.983 4.41026C12.1226 4.26857 12.201 4.07639 12.201 3.876V3.46422H13.6224C13.8197 3.46422 14.009 3.54383 14.1486 3.68552C14.2881 3.82722 14.3665 4.01939 14.3665 4.21978V5.28889V5.28511Z" fill="#58A6FF"/><path d="M4.15062 8.27333C3.93389 8.27333 3.72203 8.33858 3.54182 8.46083C3.36162 8.58308 3.22116 8.75684 3.13822 8.96013C3.05528 9.16342 3.03358 9.38712 3.07587 9.60293C3.11815 9.81875 3.22251 10.017 3.37577 10.1726C3.52902 10.3282 3.72427 10.4341 3.93684 10.4771C4.14941 10.52 4.36974 10.498 4.56997 10.4138C4.77021 10.3295 4.94135 10.1869 5.06176 10.004C5.18217 9.82103 5.24644 9.60593 5.24644 9.38589C5.24594 9.09064 5.13008 8.80767 4.92428 8.59908C4.71848 8.39049 4.43956 8.27333 4.14876 8.27333H4.15062Z" fill="#58A6FF"/><path d="M7.99999 8.27333C7.78326 8.27333 7.57139 8.33858 7.39119 8.46083C7.21098 8.58308 7.07053 8.75684 6.98759 8.96013C6.90465 9.16342 6.88295 9.38712 6.92523 9.60293C6.96751 9.81875 7.07188 10.017 7.22513 10.1726C7.37838 10.3282 7.57364 10.4341 7.78621 10.4771C7.99877 10.52 8.2191 10.498 8.41934 10.4138C8.61957 10.3295 8.79071 10.1869 8.91112 10.004C9.03153 9.82103 9.0958 9.60593 9.0958 9.38589C9.09531 9.09097 8.9797 8.80828 8.7743 8.59974C8.5689 8.39121 8.29047 8.27383 7.99999 8.27333Z" fill="#58A6FF"/><path d="M11.8511 8.27333C11.6343 8.27333 11.4225 8.33858 11.2423 8.46083C11.0621 8.58308 10.9216 8.75684 10.8387 8.96013C10.7557 9.16342 10.734 9.38712 10.7763 9.60293C10.8186 9.81875 10.923 10.017 11.0762 10.1726C11.2295 10.3282 11.4247 10.4341 11.6373 10.4771C11.8499 10.52 12.0702 10.498 12.2704 10.4138C12.4706 10.3295 12.6418 10.1869 12.7622 10.004C12.8826 9.82103 12.9469 9.60593 12.9469 9.38589C12.9464 9.09064 12.8305 8.80767 12.6247 8.59908C12.4189 8.39049 12.14 8.27333 11.8492 8.27333H11.8511Z" fill="#58A6FF"/><path d="M4.15062 11.5978C3.93389 11.5978 3.72203 11.663 3.54182 11.7853C3.36162 11.9075 3.22116 12.0813 3.13822 12.2846C3.05528 12.4879 3.03358 12.7116 3.07587 12.9274C3.11815 13.1432 3.22251 13.3414 3.37577 13.497C3.52902 13.6526 3.72427 13.7586 3.93684 13.8015C4.14941 13.8444 4.36974 13.8224 4.56997 13.7382C4.77021 13.654 4.94135 13.5114 5.06176 13.3284C5.18217 13.1455 5.24644 12.9304 5.24644 12.7103C5.24594 12.4151 5.13008 12.1321 4.92428 11.9235C4.71848 11.7149 4.43956 11.5978 4.14876 11.5978H4.15062Z" fill="#58A6FF"/><path d="M7.99999 11.5978C7.78326 11.5978 7.57139 11.663 7.39119 11.7853C7.21098 11.9075 7.07053 12.0813 6.98759 12.2846C6.90465 12.4879 6.88295 12.7116 6.92523 12.9274C6.96751 13.1432 7.07188 13.3414 7.22513 13.497C7.37838 13.6526 7.57364 13.7586 7.78621 13.8015C7.99877 13.8444 8.2191 13.8224 8.41934 13.7382C8.61957 13.654 8.79071 13.5114 8.91112 13.3284C9.03153 13.1455 9.0958 12.9304 9.0958 12.7103C9.09531 12.4154 8.9797 12.1327 8.7743 11.9242C8.5689 11.7157 8.29047 11.5983 7.99999 11.5978Z" fill="#58A6FF"/><path d="M11.8511 11.5978C11.6343 11.5978 11.4225 11.663 11.2423 11.7853C11.0621 11.9075 10.9216 12.0813 10.8387 12.2846C10.7557 12.4879 10.734 12.7116 10.7763 12.9274C10.8186 13.1432 10.923 13.3414 11.0762 13.497C11.2295 13.6526 11.4247 13.7586 11.6373 13.8015C11.8499 13.8444 12.0702 13.8224 12.2704 13.7382C12.4706 13.654 12.6418 13.5114 12.7622 13.3284C12.8826 13.1455 12.9469 12.9304 12.9469 12.7103C12.9464 12.4151 12.8305 12.1321 12.6247 11.9235C12.4189 11.7149 12.14 11.5978 11.8492 11.5978H11.8511Z" fill="#58A6FF"/></svg>
+                                      </label>
+                                    </div>
+                                    <select name="timezone_offset" id="timezone-offset" class="custom-select form-control">
+                                      <option></option>
+                                      <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                                      <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                                      <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                      <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                                      <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                      <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                                      <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                                      <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                      <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                      <option value="America/Managua">(GMT-06:00) Central America</option>
+                                      <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                                      <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                      <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                      <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                      <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                      <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                                      <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                                      <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                                      <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                                      <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                                      <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                                      <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                                      <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                                      <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                                      <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                                      <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                                      <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                                      <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                                      <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                                      <option value="Europe/London">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                                      <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                      <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                      <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                      <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                                      <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                                      <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                                      <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                                      <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                                      <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                                      <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                                      <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                                      <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                                      <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                                      <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                                      <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                                      <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                                      <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                                      <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                                      <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                                      <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                                      <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                                      <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                                      <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                                      <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                                      <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                                      <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                      <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                                      <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                                      <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                                      <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                                      <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                                      <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                                      <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                      <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                      <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                                      <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                                      <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                                      <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                                      <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                                      <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                                      <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                                      <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                                      <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                                      <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                                      <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                                      <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                                      <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                                      <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                                      <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                                      <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                                      <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                                      <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+                                    </select>
+
                                     <div class="responsive-calendar">
                                       <div class="controls">
                                         <a class="float-left" data-go="prev">
@@ -183,115 +296,111 @@
                                           <!-- the place where days will be generated -->
                                       </div>
                                     </div>
+
                                   </div>
-                                  <!-- end Mini Calendar -->
-  
-  
-                                  <!--Appointment Times -->
-                                  <div class="col my-auto">
-                                    <div id="appointmentList">
-                                      <h4><i id="chooseDateArrow" class="fa fa-arrow-left"></i>&nbsp;Choose a Date On The Calendar</h4>
-                                    </div>
-                                  </div>
-                                  <!-- end Appointment Times -->
-                                </div>
-                            </div>
-  
-  
-  
-  
-                            <div id="appointmentForm" style="display: none;">
-                              <div class="row">
-  
-                                <div class="col">
-                                  <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
-                                  <h4>Provide your information</h4>
-                                  <div class="form">
-  
-                                    <div class="form-group">
-                                      <label for="txtName">First & Last Name of the participant:</label>
-                                      <input id="txtName" class="form-control validate[required]" type="text" name="name" placeholder="John Smith">
-                                    </div>
-  
-                                    <div class="form-group">
-                                      <label for="txtEmail">Email address</label>
-                                      <input id="txtEmail" class="form-control validate[required,custom[email]]" type="text" name="name" placeholder="Your email address" required="">
-                                    </div>
-  
-                                    <div class="form-group">
-                                      <label for="txtMobile">Mobile phone</label>
-                                      <input id="txtMobile" class="form-control validate[required]" type="text" name="name" placeholder="Your mobile phone" required="">
-                                    </div>
-  
-                                    <div class="form-group">
-                                      <label for="txtComments">Any comments?</label>
-                                      <textarea id="txtComments" name="txtComments" class="form-control"></textarea><br />
-                                    </div>
-  
-                                    <h4>Appointment Information</h4>
-                                    <div id="calendarName"></div>
-                                    <div>
-                                      <span id="confirmationDate"></span>&nbsp;<span id="confirmationTime"></span><br />
-                                      <span id="confirmationTimeZone"></span>
-                                    </div>
-  
-                                    <br />
-  
-                                    <a href="javascript:;" onclick="bookit()" class="btn btn-primary">BOOK IT</a>
-  
-                                    </div>
                                 </div>
                               </div>
                             </div>
-  
-                            <div id="appointmentConfirmed" style="display: none;">
-                                <h1>Appointment Confirmed</h1>
-                                <h2 class="appointmentDate"></h2>
-                                <h3 class="appointmentTimeZone"></h3>
-                                <div id="addToCalendar">
-                                    <h3>Add This To Your Calendar</h3>
-                                    <br />
-                                    <div title="Add to Calendar" class="addeventatc">
-                                        Add to Calendar
-                                    <span class="start">06/27/2017 09:00 AM</span>
-                                        <span class="end">06/27/2017 11:00 AM</span>
-                                        <span class="timezone">America/New_York</span>
-                                        <span class="title">Summary of the event</span>
-                                        <span class="description">Description of the event<br>
-                                            Example of a new line</span>
-                                        <span class="location">Location of the event</span>
-                                        <span class="organizer">Organizer</span>
-                                        <span class="organizer_email">Organizer e-mail</span>
-                                        <span class="facebook_event">https://www.facebook.com/events/703782616363133</span>
-                                        <span class="all_day_event">false</span>
-                                        <span class="date_format">MM/DD/YYYY</span>
-                                        <span class="client">aZAwctIXbzjUqsSeGmKv16703</span>
-                                    </div>
-                                </div>
-  
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <div id="redirectURLSection" style="display: none;">
-                                    <h3>Important Next Step!</h3>
-                                    <p>After you add the appointment to your schedule, let's take care of the next step.</p>
-                                    <a href="#" class="btn btn-primary" id="redirectURL">Continue <i class="fa fa-arrow-circle-o-right"></i></a>
-                                </div>
+                          </div>
+
+                          <div class="block">
+                            <div id="appointmentList">
+                              
                             </div>
-  
-  
-  
+                          </div>
+
+                          <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
+                            <a href="javascript:;" onclick="startOver();" class="btn mr-3">BACK</a><br />
+                            <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">CONTINUE</a>
                           </div>
                           
                         </div>
-                        
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                      </div>
+
+
+                        <div id="appointmentForm" style="display: none;">
+                          <div class="row">
+
+                            <div class="col">
+                              <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
+                              <h4>Provide your information</h4>
+                              <div class="form">
+
+                                <div class="form-group">
+                                  <label for="txtName">First & Last Name of the participant:</label>
+                                  <input id="txtName" class="form-control validate[required]" type="text" name="name" placeholder="John Smith">
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="txtEmail">Email address</label>
+                                  <input id="txtEmail" class="form-control validate[required,custom[email]]" type="text" name="name" placeholder="Your email address" required="">
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="txtMobile">Mobile phone</label>
+                                  <input id="txtMobile" class="form-control validate[required]" type="text" name="name" placeholder="Your mobile phone" required="">
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="txtComments">Any comments?</label>
+                                  <textarea id="txtComments" name="txtComments" class="form-control"></textarea><br />
+                                </div>
+
+                                <h4>Appointment Information</h4>
+                                <div id="calendarName"></div>
+                                <div>
+                                  <span id="confirmationDate"></span>&nbsp;<span id="confirmationTime"></span><br />
+                                  <span id="confirmationTimeZone"></span>
+                                </div>
+
+                                <br />
+
+                                <a href="javascript:;" onclick="bookit()" class="btn btn-primary">BOOK IT</a>
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="appointmentConfirmed" style="display: none;">
+                          <h1>Appointment Confirmed</h1>
+                          <h2 class="appointmentDate"></h2>
+                          <h3 class="appointmentTimeZone"></h3>
+                          <div id="addToCalendar">
+                              <h3>Add This To Your Calendar</h3>
+                              <br />
+                              <div title="Add to Calendar" class="addeventatc">
+                                  Add to Calendar
+                              <span class="start">06/27/2017 09:00 AM</span>
+                                  <span class="end">06/27/2017 11:00 AM</span>
+                                  <span class="timezone">America/New_York</span>
+                                  <span class="title">Summary of the event</span>
+                                  <span class="description">Description of the event<br>
+                                      Example of a new line</span>
+                                  <span class="location">Location of the event</span>
+                                  <span class="organizer">Organizer</span>
+                                  <span class="organizer_email">Organizer e-mail</span>
+                                  <span class="facebook_event">https://www.facebook.com/events/703782616363133</span>
+                                  <span class="all_day_event">false</span>
+                                  <span class="date_format">MM/DD/YYYY</span>
+                                  <span class="client">aZAwctIXbzjUqsSeGmKv16703</span>
+                              </div>
+                          </div>
+
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <div id="redirectURLSection" style="display: none;">
+                              <h3>Important Next Step!</h3>
+                              <p>After you add the appointment to your schedule, let's take care of the next step.</p>
+                              <a href="#" class="btn btn-primary" id="redirectURL">Continue <i class="fa fa-arrow-circle-o-right"></i></a>
+                          </div>
+                        </div>
+
+
                       
-  
-  
-  
+                      </div>
+
+
+
                       <input type="hidden" name="hEventTypeID" id="hEventTypeID" value="6256" />
                       <input type="hidden" name="hTimeZone" id="hTimeZone" />
                       <!-- their timezone -->
@@ -308,6 +417,8 @@
                       <input type="hidden" name="hRedirectURL" id="hRedirectURL" />
   
                       <script>function skipForSingle() {chooseCalendar(6256,'1st Trial Lesson');}window.onload = skipForSingle;</script>
+                  
+
                     </form>
                   </div>
 
@@ -697,3 +808,4 @@
   <script src="https://sparkpages.io/scheduler5/cal5.min.js?v=20190804a"></script>
 
 </body>
+</html>
