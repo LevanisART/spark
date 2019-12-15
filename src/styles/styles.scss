@@ -277,6 +277,13 @@ body {
   }
 }
 
+.title-bigger {
+  font: {
+    weight: 500;
+    size: 24px;
+  }
+}
+
 .offer-details {
   p {
     color: #7E7E7E;
@@ -310,6 +317,10 @@ body {
       }
     }
   }
+}
+
+.lesson {
+  box-shadow: 0 0 8px rgba(0, 0, 0, .08);
 }
 
 .page {

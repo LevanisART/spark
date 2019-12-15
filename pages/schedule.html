@@ -1,12 +1,16 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Checkout Page</title>
-  <link rel="stylesheet" href="styles/main.min.css">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="../styles/main.min.css">
 </head>
+
+
 
 <body>
   <div class="page ">
@@ -14,7 +18,7 @@
       <header class="header py-3">
         <div class="container">
           <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
+            <a href="#"><img src="../images/logo.png" alt=""></a>
           </div>
         </div>
       </header>
@@ -23,49 +27,291 @@
         <div class="checkout-container bg-white">
           <div class="d-flex flex-wrap">
             <div class="details-block">
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Order Summary</h2>
-  
-                  <div class="mt-4">
-                    <div class="order-summary-table table-responsive">
-                      <table class="table mb-1">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col">Item Name</th>
-                            <th class="text-right" scope="col">Price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>2nd location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>4th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>6th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr class="total">
-                            <td class="py-4">Total</td>
-                            <td class="py-4 text-right">$515.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Your Details</h2>
+              <div class="block p-4 col-12">
+                <div class="block-inner p-3 m-1 d-flex flex-column">
+                  <h2 class="title title-bigger">Welcome to the Scheduler</h2>
+
+                  <div class="lesson p-4 w-100">
+                    <form method="post" action="./?l=ss&amp;cal=UCb&amp;c=&amp;s=&amp;upID=" id="form1">
+                      <div class="aspNetHidden">
+                        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="RO5FtkHmDR2gsoBPDBcqmBA66wsGmDIC1jDVPESvJiiMehu2fEhqvr+8Bnfz/TAUwoHAr+aVcC/zbLhyxaTRRSCtp8lysiTo0ZWh6vdixTGg7C1rRK0tSHUJz1QUWYdNA9FIDDIH5psYPSZwFh98uFq13Bd/RMEYMJVPuEUtpw10yKb4krprRLGeI2zMrw08Nb5emaFHbh+vZ58Nsod5vFMFVf/xjnneJiVZbjOUBNw0wdvIyr5olcXAON3ro8mp05vGjUstkhjhZcpbX9fcKN+iEw0/x48rZWgBRhzSjxyik/s93CXImvZhDjA8noM3LtBE1tlgUWv8VVRR2vhCz3zXEvAJ82bAt9L8OefP29KfdHgNR6EQn/han7hDzIFLygj6EDbnBBH01snbaIh5iZAHvQ0l/8+paCr4OuvN82i29a3DCivmTCpnNuSmhTOU6kgpMVF5T/0X5VVr6VAC+VtyoYPOYcGI/PoduRZzaUf5pGz6oSeIJCaXIzI6+7ygpL+Lfg==" />
+                      </div>
   
-                  <div class="form-groups mt-4">
+                      <div class="aspNetHidden">
+                        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0692F61B" />
+                        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="viiJGXgdpL85yXyQqm2aGLeqiglqAdY8PQ3uKIFa8oU5USd7v5ibxP9zc+cwfXVyFMTeZzebFLTVtjRjjYrPyQxN/82gOBFF+msHavWUKjU4S2RsiDza3TTWRDK2gXNeeco8rMiI3T6uCmBad6ZA6um/KlANsjGQaIzRdDY3dPtHQxT/DNuD/POI9Febv7H8ruDKx2dEXExqdbSYawaVIIaWfcJs1lBTSs31H2kjoB5HruqZUqnpVK3JOr6tpZCP/L7zES74uqLdcbOst7742138aoHCVsXHqZ6exYCrOjD09CsdEVloGcjw4vuL1R7PZi+cilmskj+QytvKtSGgM7wfjHo=" />
+                      </div>
+  
+                      <div class="container">
+                        <div class="row">
+  
+                          <div class="col">
+                            <h4 class="my-0 font-weight-normal">1st Trial Lesson</h4>
+                            <p>Let's schedule your appointment!</p>
+                            <span id="topCalendarType"></span>
+  
+                            <div id="chooseCalendar">
+                              <h4 class="my-0 font-weight-normal">Choose Schedule</h4>
+                              <br />
+                              <div style="max-width: 492px;">
+                                  
+                              </div>
+                            </div>
+  
+                            <div id="chooseTimeZone" style="display: none; max-width: 492px;">
+                              <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
+                              <h4 class="my-0 font-weight-normal">Choose Time Zone</h4>
+                              <br />
+  
+                              <select name="timezone_offset" id="timezone-offset" class="form-control">
+                                <option></option>
+                                <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                                <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                                <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                                <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                                <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                                <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                <option value="America/Managua">(GMT-06:00) Central America</option>
+                                <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+                                <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                                <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                                <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                                <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                                <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                                <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                                <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                                <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                                <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                                <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                                <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                                <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                                <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                                <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                                <option value="Europe/London">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                                <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                                <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+                                <option value="Asia/Amman">(GMT+02:00) Amman</option>
+                                <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                                <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                                <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                                <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+                                <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                                <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                                <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                                <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+                                <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                                <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                                <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+                                <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+                                <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                                <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+                                <option value="Asia/Baku">(GMT+04:00) Baku</option>
+                                <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                                <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                                <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+                                <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                                <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+                                <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                                <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+                                <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                                <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                                <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                                <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                                <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+                                <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                                <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                                <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+                                <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                                <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                                <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                                <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                                <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                                <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                                <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                                <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                                <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+                                <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                                <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                                <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                                <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                                <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+                              </select>
+                              <br />
+                              <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">Continue</a>
+                            </div>
+  
+                            <div id="chooseAppointment" style="display: none;">
+  
+                              <div class="row">
+                                  <!-- Mini Calendar -->
+                                  <div class="col-md-4" style="max-width: 492px;">
+                                    <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
+                                    <div class="responsive-calendar">
+                                      <div class="controls">
+                                        <a class="float-left" data-go="prev">
+                                            <div class="btn btn-sm btn-primary"><i class="fa fa-chevron-left"></i></div>
+                                        </a>
+                                        <h4><span data-head-month></span>&nbsp;<span data-head-year></span></h4>
+                                        <a class="float-right" data-go="next">
+                                            <div class="btn btn-sm btn-primary"><i class="fa fa-chevron-right"></i></div>
+                                        </a>
+                                      </div>
+                                      <hr />
+                                      <div class="day-headers">
+                                        <div class="day header">Sun</div>
+                                        <div class="day header">Mon</div>
+                                        <div class="day header">Tue</div>
+                                        <div class="day header">Wed</div>
+                                        <div class="day header">Thu</div>
+                                        <div class="day header">Fri</div>
+                                        <div class="day header">Sat</div>
+                                      </div>
+                                      <div class="days" data-group="days">
+                                          <!-- the place where days will be generated -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end Mini Calendar -->
+  
+  
+                                  <!--Appointment Times -->
+                                  <div class="col my-auto">
+                                    <div id="appointmentList">
+                                      <h4><i id="chooseDateArrow" class="fa fa-arrow-left"></i>&nbsp;Choose a Date On The Calendar</h4>
+                                    </div>
+                                  </div>
+                                  <!-- end Appointment Times -->
+                                </div>
+                            </div>
+  
+  
+  
+  
+                            <div id="appointmentForm" style="display: none;">
+                              <div class="row">
+  
+                                <div class="col">
+                                  <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
+                                  <h4>Provide your information</h4>
+                                  <div class="form">
+  
+                                    <div class="form-group">
+                                      <label for="txtName">First & Last Name of the participant:</label>
+                                      <input id="txtName" class="form-control validate[required]" type="text" name="name" placeholder="John Smith">
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label for="txtEmail">Email address</label>
+                                      <input id="txtEmail" class="form-control validate[required,custom[email]]" type="text" name="name" placeholder="Your email address" required="">
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label for="txtMobile">Mobile phone</label>
+                                      <input id="txtMobile" class="form-control validate[required]" type="text" name="name" placeholder="Your mobile phone" required="">
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label for="txtComments">Any comments?</label>
+                                      <textarea id="txtComments" name="txtComments" class="form-control"></textarea><br />
+                                    </div>
+  
+                                    <h4>Appointment Information</h4>
+                                    <div id="calendarName"></div>
+                                    <div>
+                                      <span id="confirmationDate"></span>&nbsp;<span id="confirmationTime"></span><br />
+                                      <span id="confirmationTimeZone"></span>
+                                    </div>
+  
+                                    <br />
+  
+                                    <a href="javascript:;" onclick="bookit()" class="btn btn-primary">BOOK IT</a>
+  
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div id="appointmentConfirmed" style="display: none;">
+                                <h1>Appointment Confirmed</h1>
+                                <h2 class="appointmentDate"></h2>
+                                <h3 class="appointmentTimeZone"></h3>
+                                <div id="addToCalendar">
+                                    <h3>Add This To Your Calendar</h3>
+                                    <br />
+                                    <div title="Add to Calendar" class="addeventatc">
+                                        Add to Calendar
+                                    <span class="start">06/27/2017 09:00 AM</span>
+                                        <span class="end">06/27/2017 11:00 AM</span>
+                                        <span class="timezone">America/New_York</span>
+                                        <span class="title">Summary of the event</span>
+                                        <span class="description">Description of the event<br>
+                                            Example of a new line</span>
+                                        <span class="location">Location of the event</span>
+                                        <span class="organizer">Organizer</span>
+                                        <span class="organizer_email">Organizer e-mail</span>
+                                        <span class="facebook_event">https://www.facebook.com/events/703782616363133</span>
+                                        <span class="all_day_event">false</span>
+                                        <span class="date_format">MM/DD/YYYY</span>
+                                        <span class="client">aZAwctIXbzjUqsSeGmKv16703</span>
+                                    </div>
+                                </div>
+  
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <div id="redirectURLSection" style="display: none;">
+                                    <h3>Important Next Step!</h3>
+                                    <p>After you add the appointment to your schedule, let's take care of the next step.</p>
+                                    <a href="#" class="btn btn-primary" id="redirectURL">Continue <i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+  
+  
+  
+                          </div>
+                          
+                        </div>
+                        
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                      </div>
+                      
+  
+  
+  
+                      <input type="hidden" name="hEventTypeID" id="hEventTypeID" value="6256" />
+                      <input type="hidden" name="hTimeZone" id="hTimeZone" />
+                      <!-- their timezone -->
+                      <input type="hidden" name="hTimeZoneOlson" id="hTimeZoneOlson" value="America/New_York" />
+                      <!-- our timezone -->
+                      <input type="hidden" name="hStartDate" id="hStartDate" value="2019-12" />
+                      <input type="hidden" name="hEventID" id="hEventID" />
+                      <input type="hidden" name="hLocationID" id="hLocationID" value="1134" />
+                      <input type="hidden" name="hReplacementID" id="hReplacementID" value="-1" />
+                      <input type="hidden" name="hContactID" id="hContactID" />
+                      <input type="hidden" name="hEmail" id="hEmail" />
+                      <input type="hidden" name="hFullName" id="hFullName" />
+                      <input type="hidden" name="hMobile" id="hMobile" />
+                      <input type="hidden" name="hRedirectURL" id="hRedirectURL" />
+  
+                      <script>function skipForSingle() {chooseCalendar(6256,'1st Trial Lesson');}window.onload = skipForSingle;</script>
+                    </form>
+                  </div>
+
+                  <!-- <div class="form-groups mt-4">
                     <div class="form-group d-flex align-items-center flex-wrap">
                       <label class="col-md-4 pl-0 pr-4" for="CompanyName">Company Name</label>
                       <input type="text" placeholder="Company Name" class="form-control col-md-7" id="CompanyName">
@@ -357,11 +603,11 @@
                       </select>
                     </div>
                   </div>
-  
+   -->
                 </div>
               </div>
               
-              <div class="block col-12">
+              <!-- <div class="block col-12">
                 <div class="d-flex flex-column">
                   <h2 class="title">Add Items To Cart</h2>
   
@@ -417,194 +663,10 @@
                   </div>
   
                 </div>
-              </div>
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Order Summary</h2>
-  
-                  <div class="mt-4">
-                    <div class="order-summary-table table-responsive">
-                      <table class="table mb-1">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col">Item Name</th>
-                            <th class="text-right" scope="col">Price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>2nd location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>4th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr>
-                            <td>6th location - $175 per month</td>
-                            <td class="text-right">$175.00</td>
-                          </tr>
-                          <tr class="total">
-                            <td class="py-4">Total</td>
-                            <td class="py-4 text-right">$515.00</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Do you have a Coupon to apply?</h2>
-  
-                  <div class="mt-4">
-                    <div class="form-group mb-0 d-flex align-items-center coupon-code">
-                      <input type="text" placeholder="Coupon Code" class="form-control col-md-9" id="CouponCode">
-                      <div class="coupon-code-button col-sm-3 pl-4 pr-2">
-                        <button type="submit" class="btn btn-primary w-100">Apply</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> -->
 
-              <div class="block payment-information col-12 border-0">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Enter Your Payment Information</h2>
-  
-                  <div class="mt-4">
-                    <div class="mb-4 pb-1">
-                      <input class="radio-btn" name="radio-collection" id="radio-1" type="radio" value="49">
-                      <label class="radio-label" for="radio-1" tabindex="1">
-                        <div class="d-flex flex-column mr-2">  
-                          <span>Bank Card</span>
-                          <p>Visa, MasterCard, Amex and Discover</p>
-                        </div>
-                        <div class="d-flex">
-                          <img src="images/visa.svg" alt="">
-                          <img class="py-2 ml-2" src="images/mastercard.svg" alt="">
-                          <img class="py-2 ml-2" src="images/amex.svg" alt="">
-                          <img class="py-2 ml-2" src="images/discover.svg" alt="">
-                        </div>
-                      </label>
-                      <input class="radio-btn" name="radio-collection" id="radio-2" type="radio" value="349">
-                      <label class="radio-label" for="radio-2" tabindex="2">
-                        <span class="py-2 mr-2">Paypal</span>
-                        <div>
-                          <img src="images/paypal.svg" alt="">
-                        </div>
-                      </label>
-                    </div>
-
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CardNumber">Card Number</label>
-                      <input type="text" placeholder="Card Number" class="form-control col-md-7" id="CardNumber">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CVCNumber">CVC Number</label>
-                      <input type="text" placeholder="CVC Number" class="form-control col-md-7" id="CVCNumber">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4">Expires</label>
-                      <div class="d-flex col-md-7 px-0">
-                        <div class="col-md-6 pl-0">
-                          <select class="form-control" id="ExpirationMonth">
-                            <option value="" selected="selected">Month</option>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                          </select>
-                        </div>
-
-                        <div class="col-md-6 pr-0">
-                          <select class="form-control" id="ExpirationYear">
-                            <option value="" selected="selected">Year</option>
-                            <option value="1">2024</option>
-                            <option value="2">2023</option>
-                            <option value="3">2022</option>
-                            <option value="4">2021</option>
-                            <option value="5">2020</option>
-                            <option value="6">2019</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group mb-0 d-flex align-items-start flex-wrap">
-                      <label class="col-md-4 mt-2 pl-0 pr-4" for="Comments">Comments</label>
-                      <textarea rows="10" class="form-control col-md-7 py-2" id="Comments"></textarea>
-                    </div>
-                    <div class="buy-button w-100 mt-4 pt-2 pl-1 pr-5">
-                      <button type="submit" class="btn btn-primary w-100">Buy Now</button>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
             </div>
-  
-            <div class="block offer-details-block border-left col-12">
-              <div class="d-flex flex-column">
-                <h2 class="title">Offer Details</h2>
-                <div class="offer-details d-flex flex-column position-relative">
-                  <p class="mt-4 pt-2">
-                      Welcome to Spark Minds! <br><br>
 
-                      Use this page to enroll into Spark 
-                      Minds and lock in our pre-launch 
-                      pricing for LIFE.* <br><br>
-                      
-                      You will have 100% access to all Spark 
-                      Minds features:                       
-                  </p>
-                  <div class="features-list ml-4 pl-1 mt-2">
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Student Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Tuition Billing</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Retail / Point of Sale</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Full Ranks Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Team TODO and Task Lists</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Appointment book with automatic reminders with Google Cal Sync.</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Leads & Trial Maximizer App (never let a Trial or Leads slip through the cracks)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Trial Registration with Online First Appointment Scheduler</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Mass Communication via Email and SMS Text Messaging</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Attendance Tracking</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Automated Email System</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Forms and Surveys</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Online Payments for Events, Trials, Programs</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Best damn software you will ever use</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Support when you need it</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Weekly Online Live Trainings and Live Q&A's</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">All the Stats you need</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Ability to help us decide the newest features</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Plus a lot more features already available.</span></div>
-                  </div>
-
-                  
-                  <p class="mt-3">Pre-Launch Team Bonuses:</p>
-                  <div class="features-list ml-4 pl-1 mt-2">
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Landing Page Builder ($67/month value)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">300 SMS Text Messages ($50 Value)</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">Rate locked in for Life</span></div>
-                    <div class="list-item d-flex my-3"><span class="col-11 px-0">One-on-One Training for your entire team to get you started</span></div>
-                  </div>
-                  <div class="d-flex align-items-center p-4">
-                    <img class="img-fluid" src="images/guarantee-14.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-  
           </div>
         </div>
       </main>
@@ -620,7 +682,18 @@
     </footer>
   </div>
   
-  <script src="scripts/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://sparkpages.io/plugins/responsive-calendar/0.9/css/responsive-calendar.min.css" rel="stylesheet" />
+  <script src="https://sparkpages.io/plugins/responsive-calendar/0.9/js/responsive-calendar.min.js"></script>
+  <script src="https://sparkpages.io/invoice/assets/plugins/moment/moment.min.js"></script>
+  <link href="https://uplevelpages.io/plugins/jQuery-Validation-Engine/css/validationEngine.jquery.css" rel="stylesheet" />
+  <script src="https://uplevelpages.io/plugins/jQuery-Validation-Engine/js/languages/jquery.validationEngine-en.js"></script>
+  <script src="https://uplevelpages.io/plugins/jQuery-Validation-Engine/js/jquery.validationEngine.js"></script>
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  <script src="https://sparkpages.io/abundance-common.min.js"></script>
+
+  <script src="https://sparkpages.io/scheduler5/cal5.min.js?v=20190804a"></script>
 
 </body>
-</html>
