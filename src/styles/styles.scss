@@ -417,105 +417,6 @@ input:focus + label::before {
 }
 
 
-@include media-breakpoint-only(md) {
-  .block {
-    padding: 40px;
-  }
-  .main-block {
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-  .offer-main-block {
-    flex: 0 0 40%;
-    max-width: 40%;
-  }
-  .list-item span {
-    flex: 0 0 85%;
-    max-width: 85%;
-  }
-  .form-group label {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .block {
-    border-top: none !important;
-    border-right: none !important;
-    border-left: none !important;
-    &.border-left {
-      border-left: none !important;
-    }
-  }
-  .checkout-container {
-    border: none !important;
-  }
-  .content {
-    padding: 3rem 0 0 0 !important;
-    margin: 0 !important;
-  }
-  .main-block, .offer-main-block {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .main-block {
-    order: 2;
-  }
-  .offer-main-block {
-    border-bottom: 2px solid #f3f3f3 !important;
-  }
-  .form-groups {
-    margin-top: 2.25rem!important;
-  }
-  .offer-main-block img {
-    width: 60%;
-  }
-  .form-group label {
-    margin-bottom: .75rem;
-  }
-  .buy-button {
-    padding: 0 !important;
-  }
-}
-
-@media (max-width: 500px) {
-  .coupon-code {
-    flex-wrap: wrap;
-    .coupon-code-button {
-      margin-top: 1rem;
-      padding-left: 0 !important;
-      button {
-        width: unset !important;
-        padding: 0 25px;
-      }
-    }
-  }
-}
-
-@media (max-width: 435px) {
-  .order-summary-table table {
-    width: 350px;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .block {
-    padding: 2rem;
-  }
-  .offer-main-block img {
-    width: 100%;
-  }
-}
-
-
 .responsive-calendar {
   border: 1px solid #F5F5F5;
   border-radius: 5px;
@@ -637,4 +538,132 @@ input:focus + label::before {
   line-height: 21px;
   font-weight: 500;
   font-size: 14px;
+}
+
+
+@include media-breakpoint-only(md) {
+  .block {
+    padding: 40px;
+  }
+  .main-block {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .offer-main-block {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .list-item span {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+  .form-group label {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    &.border-left {
+      border-left: none !important;
+    }
+  }
+  .checkout-container {
+    border: none !important;
+  }
+  .content {
+    padding: 3rem 0 0 0 !important;
+    margin: 0 !important;
+  }
+  .main-block, .offer-main-block {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .main-block {
+    order: 2;
+  }
+  .offer-main-block {
+    border-bottom: 2px solid #f3f3f3 !important;
+  }
+  .form-groups {
+    margin-top: 2.25rem!important;
+  }
+  .offer-main-block img {
+    width: 60%;
+  }
+  .form-group label {
+    margin-bottom: .75rem;
+  }
+  .buy-button {
+    padding: 0 !important;
+  }
+  .title-bigger {
+    font-size: 18px;
+  }
+  .schedule-block {
+    .block-inner {
+      padding: .5rem !important;
+    }
+    .lesson {
+      box-shadow: none;
+      .lesson-info {
+        padding: .25px !important;
+      }
+      .block {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .responsive-calendar {
+        margin-top: .5rem !important;
+        margin-left: -.25rem!important;
+        margin-right: -.25rem!important;
+        .day {
+          font-size: 13px;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .coupon-code {
+    flex-wrap: wrap;
+    .coupon-code-button {
+      margin-top: 1rem;
+      padding-left: 0 !important;
+      button {
+        width: unset !important;
+        padding: 0 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .order-summary-table table {
+    width: 350px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .block {
+    padding: 2rem;
+  }
+  .offer-main-block img {
+    width: 100%;
+  }
 }

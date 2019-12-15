@@ -28,7 +28,7 @@
           <div class="d-flex flex-wrap">
             <div class="schedule-block w-100">
 
-              <div class="block p-4 col-12">
+              <div class="p-4 col-12">
                 <div class="block-inner p-3 m-1 d-flex flex-column">
                   <h2 class="title title-bigger">Welcome to the Scheduler</h2>
 
@@ -55,14 +55,6 @@
 
                         <span id="topCalendarType"></span>
 
-                        <div id="chooseCalendar">
-                          <h4 class="my-0 font-weight-normal">Choose Schedule</h4>
-                          <br />
-                          <div style="max-width: 492px;">
-                              
-                          </div>
-                        </div>
-
                         <div id="chooseTimeZone" style="display: none;">
                           <div class="block p-4">
                             <div class="lesson-schedule px-2">
@@ -72,7 +64,7 @@
                                   <label class="col-md-3 pl-0 pr-4" for="timezone_offset">Choose Time Zone</label>
                                   <div class="input-group col-md-6 px-0">
                                     <div class="input-group-prepend">
-                                      <label class="input-group-text" for="timezone_offset">
+                                      <label class="input-group-text mb-0" for="timezone_offset">
                                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 17C6.81885 17 5.17545 16.5015 3.77763 15.5675C2.37981 14.6335 1.29037 13.306 0.647024 11.7528C0.00367892 10.1996 -0.164644 8.49058 0.16333 6.84174C0.491305 5.1929 1.30088 3.67835 2.48962 2.4896C3.67837 1.30085 5.1929 0.491302 6.84174 0.163328C8.49058 -0.164647 10.1996 0.00368694 11.7528 0.647032C13.3059 1.29038 14.6335 2.37984 15.5675 3.77766C16.5015 5.17548 17 6.81886 17 8.5C17 10.7543 16.1044 12.9163 14.5104 14.5104C12.9163 16.1045 10.7543 17 8.5 17ZM8.5 1.41667C7.09904 1.41667 5.72958 1.8321 4.56473 2.61043C3.39988 3.38875 2.49199 4.49502 1.95587 5.78933C1.41975 7.08364 1.27945 8.50786 1.55276 9.88189C1.82607 11.2559 2.50072 12.5181 3.49134 13.5087C4.48196 14.4993 5.74406 15.1739 7.11809 15.4472C8.49212 15.7205 9.91632 15.5803 11.2106 15.0441C12.5049 14.508 13.6112 13.6001 14.3896 12.4353C15.1679 11.2704 15.5833 9.90095 15.5833 8.5C15.5833 6.62139 14.837 4.81971 13.5087 3.49132C12.1803 2.16294 10.3786 1.41667 8.5 1.41667ZM10.0796 11.1208L8.0042 9.03904C7.93188 8.96799 7.87551 8.88234 7.83887 8.78781C7.80223 8.69327 7.78613 8.59203 7.79166 8.49079V4.95834C7.79166 4.77047 7.86626 4.59031 7.99909 4.45747C8.13193 4.32463 8.31213 4.25 8.5 4.25C8.68786 4.25 8.86806 4.32463 9.0009 4.45747C9.13373 4.59031 9.20833 4.77047 9.20833 4.95834V8.1678L11.1208 10.0803C11.1891 10.1487 11.2434 10.2298 11.2803 10.3191C11.3173 10.4084 11.3363 10.5042 11.3363 10.6008C11.3362 10.6975 11.3171 10.7932 11.2801 10.8825C11.243 10.9717 11.1888 11.0529 11.1204 11.1212C11.0521 11.1895 10.9709 11.2437 10.8816 11.2807C10.7923 11.3176 10.6966 11.3366 10.5999 11.3366C10.5033 11.3366 10.4076 11.3175 10.3183 11.2805C10.229 11.2435 10.1479 11.1892 10.0796 11.1208Z" fill="#58A6FF"/></svg>
                                       </label>
                                     </div>
@@ -180,7 +172,7 @@
 
                                 <div class="form-group mb-0 d-flex align-items-center flex-wrap">                                  
                                   <label class="w-100">Choose Date</label>
-                                  <div class="input-group col-md-6 px-0">
+                                  <div class="input-group col-md-5 px-0">
                                     
                                     <div class="responsive-calendar mt-4">
                                       <div class="controls d-flex justify-content-between align-items-center">
@@ -214,10 +206,8 @@
                                   </div>
                                 </div>
 
-
                               </div>
                             </div>
-                            
                           </div>
                           
                           <div class="block px-4 pt-0 pb-4">
@@ -347,360 +337,9 @@
                     </form>
                   </div>
 
-                  <!-- <div class="form-groups mt-4">
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="CompanyName">Company Name</label>
-                      <input type="text" placeholder="Company Name" class="form-control col-md-7" id="CompanyName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="FirstName">Owner First Name</label>
-                      <input type="text" placeholder="First Name" class="form-control col-md-7" id="FirstName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="LastName">Owner Last Name</label>
-                      <input type="text" placeholder="Last Name" class="form-control col-md-7" id="LastName">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Email">E-mail address</label>
-                      <input type="email" placeholder="E-mail address" class="form-control col-md-7" id="Email">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Phone">Phone Number</label>
-                      <input type="text" placeholder="Phone Number" class="form-control col-md-7" id="Phone">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Phone">Mobile Number</label>
-                      <input type="text" placeholder="Mobile Number" class="form-control col-md-7" id="Mobile">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Address">Address</label>
-                      <input type="text" placeholder="Address" class="form-control col-md-7" id="Address">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="City">City</label>
-                      <input type="text" placeholder="City" class="form-control col-md-7" id="City">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="StateProvinceRegion">State / Province / Region</label>
-                      <input type="text" placeholder="State" class="form-control col-md-7" id="StateProvinceRegion">
-                    </div>
-                    <div class="form-group d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="PostalCode">Postal Code</label>
-                      <input type="text" placeholder="Postal Code" class="form-control col-md-7" id="PostalCode">
-                    </div>
-                    <div class="form-group mb-0 d-flex align-items-center flex-wrap">
-                      <label class="col-md-4 pl-0 pr-4" for="Country">Country</label>
-                      <select class="form-control col-md-7" id="Country">
-                        <option value=""></option>
-                        <option selected="selected" value="1">United States</option>
-                        <option value="2">United Kingdom</option>
-                        <option value="3">Germany</option>
-                        <option value="4">Australia</option>
-                        <option value="5">Canada</option>
-                        <option value="6">France</option>
-                        <option value="7">Grenada</option>
-                        <option value="8">Afghanistan</option>
-                        <option value="9">Åland Islands</option>
-                        <option value="10">Albania</option>
-                        <option value="11">Algeria</option>
-                        <option value="12">American Samoa</option>
-                        <option value="13">Andorra</option>
-                        <option value="14">Angola</option>
-                        <option value="15">Anguilla</option>
-                        <option value="16">Antarctica</option>
-                        <option value="17">Antigua and Barbuda</option>
-                        <option value="18">Argentina</option>
-                        <option value="19">Armenia</option>
-                        <option value="20">Aruba</option>
-                        <option value="21">Austria</option>
-                        <option value="22">Azerbaijan</option>
-                        <option value="23">Bahamas</option>
-                        <option value="24">Bahrain</option>
-                        <option value="25">Bangladesh</option>
-                        <option value="26">Barbados</option>
-                        <option value="27">Belarus</option>
-                        <option value="28">Belgium</option>
-                        <option value="29">Belize</option>
-                        <option value="30">Benin</option>
-                        <option value="31">Bermuda</option>
-                        <option value="32">Bhutan</option>
-                        <option value="33">Bolivia</option>
-                        <option value="34">Bosnia and Herzegovina</option>
-                        <option value="35">Botswana</option>
-                        <option value="36">Bouvet Island</option>
-                        <option value="37">Brazil</option>
-                        <option value="38">British Indian Ocean Territory</option>
-                        <option value="39">Brunei Darussalam</option>
-                        <option value="40">Bulgaria</option>
-                        <option value="41">Burkina Faso</option>
-                        <option value="42">Burundi</option>
-                        <option value="43">Cambodia</option>
-                        <option value="44">Cameroon</option>
-                        <option value="45">Cape Verde</option>
-                        <option value="46">Cayman Islands</option>
-                        <option value="47">Central African Republic</option>
-                        <option value="48">Chad</option>
-                        <option value="49">Chile</option>
-                        <option value="50">China</option>
-                        <option value="51">Christmas Island</option>
-                        <option value="52">Cocos (Keeling) Islands</option>
-                        <option value="53">Colombia</option>
-                        <option value="54">Comoros</option>
-                        <option value="55">Congo</option>
-                        <option value="56">Congo, The Democratic Republic of The</option>
-                        <option value="57">Cook Islands</option>
-                        <option value="58">Costa Rica</option>
-                        <option value="59">Cote D'ivoire</option>
-                        <option value="60">Croatia</option>
-                        <option value="61">Cuba</option>
-                        <option value="62">Cyprus</option>
-                        <option value="63">Czech Republic</option>
-                        <option value="64">Denmark</option>
-                        <option value="65">Djibouti</option>
-                        <option value="66">Dominica</option>
-                        <option value="67">Dominican Republic</option>
-                        <option value="68">Ecuador</option>
-                        <option value="69">Egypt</option>
-                        <option value="70">El Salvador</option>
-                        <option value="71">Equatorial Guinea</option>
-                        <option value="72">Eritrea</option>
-                        <option value="73">Estonia</option>
-                        <option value="74">Ethiopia</option>
-                        <option value="75">Falkland Islands (Malvinas)</option>
-                        <option value="76">Faroe Islands</option>
-                        <option value="77">Fiji</option>
-                        <option value="78">Finland</option>
-                        <option value="79">French Guiana</option>
-                        <option value="80">French Polynesia</option>
-                        <option value="81">French Southern Territories</option>
-                        <option value="82">Gabon</option>
-                        <option value="83">Gambia</option>
-                        <option value="84">Georgia</option>
-                        <option value="85">Ghana</option>
-                        <option value="86">Gibraltar</option>
-                        <option value="87">Greece</option>
-                        <option value="88">Greenland</option>
-                        <option value="89">Guadeloupe</option>
-                        <option value="90">Guam</option>
-                        <option value="91">Guatemala</option>
-                        <option value="92">Guernsey</option>
-                        <option value="93">Guinea</option>
-                        <option value="94">Guinea-bissau</option>
-                        <option value="95">Guyana</option>
-                        <option value="96">Haiti</option>
-                        <option value="97">Heard Island and Mcdonald Islands</option>
-                        <option value="98">Holy See (Vatican City State)</option>
-                        <option value="99">Honduras</option>
-                        <option value="100">Hong Kong</option>
-                        <option value="101">Hungary</option>
-                        <option value="102">Iceland</option>
-                        <option value="103">India</option>
-                        <option value="104">Indonesia</option>
-                        <option value="105">Iran, Islamic Republic of</option>
-                        <option value="106">Iraq</option>
-                        <option value="107">Ireland</option>
-                        <option value="108">Isle of Man</option>
-                        <option value="109">Israel</option>
-                        <option value="110">Italy</option>
-                        <option value="111">Jamaica</option>
-                        <option value="112">Japan</option>
-                        <option value="113">Jersey</option>
-                        <option value="114">Jordan</option>
-                        <option value="115">Kazakhstan</option>
-                        <option value="116">Kenya</option>
-                        <option value="117">Kiribati</option>
-                        <option value="118">Korea, Democratic People's Republic of</option>
-                        <option value="119">Korea, Republic of</option>
-                        <option value="120">Kuwait</option>
-                        <option value="121">Kyrgyzstan</option>
-                        <option value="122">Lao People's Democratic Republic</option>
-                        <option value="123">Latvia</option>
-                        <option value="124">Lebanon</option>
-                        <option value="125">Lesotho</option>
-                        <option value="126">Liberia</option>
-                        <option value="127">Libyan Arab Jamahiriya</option>
-                        <option value="128">Liechtenstein</option>
-                        <option value="129">Lithuania</option>
-                        <option value="130">Luxembourg</option>
-                        <option value="131">Macao</option>
-                        <option value="132">Macedonia, The Former Yugoslav Republic of</option>
-                        <option value="133">Madagascar</option>
-                        <option value="134">Malawi</option>
-                        <option value="135">Malaysia</option>
-                        <option value="136">Maldives</option>
-                        <option value="137">Mali</option>
-                        <option value="138">Malta</option>
-                        <option value="139">Marshall Islands</option>
-                        <option value="140">Martinique</option>
-                        <option value="141">Mauritania</option>
-                        <option value="142">Mauritius</option>
-                        <option value="143">Mayotte</option>
-                        <option value="144">Mexico</option>
-                        <option value="145">Micronesia, Federated States of</option>
-                        <option value="146">Moldova, Republic of</option>
-                        <option value="147">Monaco</option>
-                        <option value="148">Mongolia</option>
-                        <option value="149">Montenegro</option>
-                        <option value="150">Montserrat</option>
-                        <option value="151">Morocco</option>
-                        <option value="152">Mozambique</option>
-                        <option value="153">Myanmar</option>
-                        <option value="154">Namibia</option>
-                        <option value="155">Nauru</option>
-                        <option value="156">Nepal</option>
-                        <option value="157">Netherlands</option>
-                        <option value="158">Netherlands Antilles</option>
-                        <option value="159">New Caledonia</option>
-                        <option value="160">New Zealand</option>
-                        <option value="161">Nicaragua</option>
-                        <option value="162">Niger</option>
-                        <option value="163">Nigeria</option>
-                        <option value="164">Niue</option>
-                        <option value="165">Norfolk Island</option>
-                        <option value="166">Northern Mariana Islands</option>
-                        <option value="167">Norway</option>
-                        <option value="168">Oman</option>
-                        <option value="169">Pakistan</option>
-                        <option value="170">Palau</option>
-                        <option value="171">Palestinian Territory, Occupied</option>
-                        <option value="172">Panama</option>
-                        <option value="173">Papua New Guinea</option>
-                        <option value="174">Paraguay</option>
-                        <option value="175">Peru</option>
-                        <option value="176">Philippines</option>
-                        <option value="177">Pitcairn</option>
-                        <option value="178">Poland</option>
-                        <option value="179">Portugal</option>
-                        <option value="180">Puerto Rico</option>
-                        <option value="181">Qatar</option>
-                        <option value="182">Reunion</option>
-                        <option value="183">Romania</option>
-                        <option value="184">Russian Federation</option>
-                        <option value="185">Rwanda</option>
-                        <option value="186">Saint Helena</option>
-                        <option value="187">Saint Kitts and Nevis</option>
-                        <option value="188">Saint Lucia</option>
-                        <option value="189">Saint Pierre and Miquelon</option>
-                        <option value="190">Saint Vincent and The Grenadines</option>
-                        <option value="191">Samoa</option>
-                        <option value="192">San Marino</option>
-                        <option value="193">Sao Tome and Principe</option>
-                        <option value="194">Saudi Arabia</option>
-                        <option value="195">Senegal</option>
-                        <option value="196">Serbia</option>
-                        <option value="197">Seychelles</option>
-                        <option value="198">Sierra Leone</option>
-                        <option value="199">Singapore</option>
-                        <option value="200">Slovakia</option>
-                        <option value="201">Slovenia</option>
-                        <option value="202">Solomon Islands</option>
-                        <option value="203">Somalia</option>
-                        <option value="204">South Africa</option>
-                        <option value="205">South Georgia and The South Sandwich Islands</option>
-                        <option value="206">Spain</option>
-                        <option value="207">Sri Lanka</option>
-                        <option value="208">Sudan</option>
-                        <option value="209">Suriname</option>
-                        <option value="210">Svalbard and Jan Mayen</option>
-                        <option value="211">Swaziland</option>
-                        <option value="212">Sweden</option>
-                        <option value="213">Switzerland</option>
-                        <option value="214">Syrian Arab Republic</option>
-                        <option value="215">Taiwan, Province of China</option>
-                        <option value="216">Tajikistan</option>
-                        <option value="217">Tanzania, United Republic of</option>
-                        <option value="218">Thailand</option>
-                        <option value="219">Timor-leste</option>
-                        <option value="220">Togo</option>
-                        <option value="221">Tokelau</option>
-                        <option value="222">Tonga</option>
-                        <option value="223">Trinidad and Tobago</option>
-                        <option value="224">Tunisia</option>
-                        <option value="225">Turkey</option>
-                        <option value="226">Turkmenistan</option>
-                        <option value="227">Turks and Caicos Islands</option>
-                        <option value="228">Tuvalu</option>
-                        <option value="229">Uganda</option>
-                        <option value="230">Ukraine</option>
-                        <option value="231">United Arab Emirates</option>
-                        <option value="232">United States Minor Outlying Islands</option>
-                        <option value="233">Uruguay</option>
-                        <option value="234">Uzbekistan</option>
-                        <option value="235">Vanuatu</option>
-                        <option value="236">Venezuela</option>
-                        <option value="237">Viet Nam</option>
-                        <option value="238">Virgin Islands, British</option>
-                        <option value="239">Virgin Islands, U.S.</option>
-                        <option value="240">Wallis and Futuna</option>
-                        <option value="241">Western Sahara</option>
-                        <option value="242">Yemen</option>
-                        <option value="243">Zambia</option>
-                        <option value="244">Zimbabwe</option>
-                      </select>
-                    </div>
-                  </div>
-   -->
                 </div>
               </div>
               
-              <!-- <div class="block col-12">
-                <div class="d-flex flex-column">
-                  <h2 class="title">Add Items To Cart</h2>
-  
-                  <div class="mt-4">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="singlelocation190">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="singlelocation190">
-                        <span class="mx-2">Single Location - $199 per month</span>
-                        <span class="mx-1">199.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="2ndlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="2ndlocation175">
-                        <span class="mx-2">2nd Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="3rdlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="3rdlocation175">
-                        <span class="mx-2">3rd Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="4thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="4thlocation175">
-                        <span class="mx-2">4th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="5thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="5thlocation175">
-                        <span class="mx-2">5th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                    <div class="custom-control custom-checkbox pb-0">
-                      <input type="checkbox" class="custom-control-input" id="6thlocation175">
-                      <label class="custom-control-label d-flex justify-content-between w-100" for="6thlocation175">
-                        <span class="mx-2">6th Location - $175 per month</span>
-                        <span class="mx-1">175.00$</span>
-                      </label>
-                    </div>
-
-                  </div>
-  
-                </div>
-              </div> -->
-
             </div>
 
           </div>
