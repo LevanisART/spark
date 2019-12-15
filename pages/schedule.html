@@ -168,13 +168,12 @@
                           </div>
 
                           <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
-                            <a href="javascript:;" onclick="startOver();" class="btn mr-3">BACK</a><br />
                             <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">CONTINUE</a>
                           </div>
                         </div>
 
                         <div id="chooseAppointment" style="display: none;">
-                          <div class="block p-4">
+                          <div class="block border-bottom-0 p-4">
                             <div class="lesson-schedule px-2">
                               <div class="form-groups my-4">
 
@@ -221,74 +220,78 @@
                             
                           </div>
                           
-                          <div class="block">
-                            <div id="appointmentList">
+                          <div class="block px-4 pt-0 pb-4">
+                            <div class="appointments px-2">
+                              <div id="appointmentList">
+                              </div>
                             </div>
-                          </div>
-                            
-
-                          <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
-                            <a href="javascript:;" onclick="startOver();" class="btn mr-3">BACK</a><br />
-                            <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">CONTINUE</a>
                           </div>
                           
                         </div>
 
 
                         <div id="appointmentForm" style="display: none;">
-                          <div class="row">
+                          <div class="block p-4">
 
-                            <div class="col">
-                              <a href="javascript:;" onclick="startOver();" class="btn btn-sm btn-default"><i class="fa fa-arrow-circle-o-left"></i>&nbsp;Start Over</a><br />
-                              <h4>Provide your information</h4>
-                              <div class="form">
+                            <div class="provide-information py-2 px-2">
+                              <h4 class="title">Provide your information</h4>
+                              <div class="form-groups mt-4">
 
-                                <div class="form-group">
-                                  <label for="txtName">First & Last Name of the participant:</label>
-                                  <input id="txtName" class="form-control validate[required]" type="text" name="name" placeholder="John Smith">
+                                <div class="form-group d-flex align-items-center flex-wrap">
+                                  <label class="col-md-3 pl-0 pr-4" for="txtName">First & Last Name:</label class="col-md-4 pl-0 pr-4">
+                                  <input class="form-control col-md-6" id="txtName" class="form-control validate[required]" type="text" name="name" placeholder="John Smith">
                                 </div>
 
-                                <div class="form-group">
-                                  <label for="txtEmail">Email address</label>
-                                  <input id="txtEmail" class="form-control validate[required,custom[email]]" type="text" name="name" placeholder="Your email address" required="">
+                                <div class="form-group d-flex align-items-center flex-wrap">
+                                  <label class="col-md-3 pl-0 pr-4" for="txtEmail">Email address</label>
+                                  <input class="form-control col-md-6" id="txtEmail" class="form-control validate[required,custom[email]]" type="text" name="name" placeholder="Your email address" required="">
                                 </div>
 
-                                <div class="form-group">
-                                  <label for="txtMobile">Mobile phone</label>
-                                  <input id="txtMobile" class="form-control validate[required]" type="text" name="name" placeholder="Your mobile phone" required="">
+                                <div class="form-group d-flex align-items-center flex-wrap">
+                                  <label class="col-md-3 pl-0 pr-4" for="txtMobile">Mobile phone</label>
+                                  <input class="form-control col-md-6" id="txtMobile" class="form-control validate[required]" type="text" name="name" placeholder="Your mobile phone" required="">
                                 </div>
 
-                                <div class="form-group">
-                                  <label for="txtComments">Any comments?</label>
-                                  <textarea id="txtComments" name="txtComments" class="form-control"></textarea><br />
+                                <div class="form-group d-flex align-items-start flex-wrap">
+                                  <label class="col-md-3 mt-1 pl-0 pr-4" for="txtComments">Any comments?</label>
+                                  <textarea class="form-control col-md-6 pt-2" id="txtComments" name="txtComments" class="form-control"></textarea><br />
                                 </div>
 
-                                <h4>Appointment Information</h4>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="block p-4">
+                            <div class="py-2 px-2">
+                              <h4 class="title">Appointment Information</h4>
+                              <div class="appointment-information mt-3">
                                 <div id="calendarName"></div>
                                 <div>
                                   <span id="confirmationDate"></span>&nbsp;<span id="confirmationTime"></span><br />
                                   <span id="confirmationTimeZone"></span>
                                 </div>
-
-                                <br />
-
-                                <a href="javascript:;" onclick="bookit()" class="btn btn-primary">BOOK IT</a>
-
-                                </div>
+                              </div>
                             </div>
+                          </div>
+
+                          <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
+                            <a href="javascript:;" onclick="startOver();" class="btn mr-3">BACK</a><br />
+                            <a href="javascript:;" onclick="bookit()" class="btn btn-primary">BOOK IT</a>
                           </div>
                         </div>
 
                         <div id="appointmentConfirmed" style="display: none;">
-                          <h1>Appointment Confirmed</h1>
-                          <h2 class="appointmentDate"></h2>
-                          <h3 class="appointmentTimeZone"></h3>
-                          <div id="addToCalendar">
-                              <h3>Add This To Your Calendar</h3>
-                              <br />
-                              <div title="Add to Calendar" class="addeventatc">
-                                  Add to Calendar
-                              <span class="start">06/27/2017 09:00 AM</span>
+                          <div class="block p-4">
+                            <div class="py-2 px-2">
+                              <h1 class="title">Appointment Confirmed</h1 cl>
+                              <h2 class="appointmentDate"></h2>
+                              <h3 class="appointmentTimeZone"></h3>
+                              <div id="addToCalendar">
+                                <h3 class="title2 mt-3">Add This To Your Calendar</h3>
+                                <br />
+                                <div title="Add to Calendar" class="addeventatc">
+                                    Add to Calendar
+                                <span class="start">06/27/2017 09:00 AM</span>
                                   <span class="end">06/27/2017 11:00 AM</span>
                                   <span class="timezone">America/New_York</span>
                                   <span class="title">Summary of the event</span>
@@ -301,20 +304,24 @@
                                   <span class="all_day_event">false</span>
                                   <span class="date_format">MM/DD/YYYY</span>
                                   <span class="client">aZAwctIXbzjUqsSeGmKv16703</span>
+                                </div>
                               </div>
+    
+                            </div>
                           </div>
-
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
                           <div id="redirectURLSection" style="display: none;">
-                              <h3>Important Next Step!</h3>
-                              <p>After you add the appointment to your schedule, let's take care of the next step.</p>
-                              <a href="#" class="btn btn-primary" id="redirectURL">Continue <i class="fa fa-arrow-circle-o-right"></i></a>
+                            <div class="block p-4">
+                              <div class="py-2 px-2">
+                                <h3 class="title">Important Next Step!</h3>
+                                <p class="title2 mt-3">After you add the appointment to your schedule, let's take care of the next step.</p>
+                              </div>
+                            </div>
+                            <div class="schedule-buttons d-flex w-100 justify-content-end p-4">
+                              <a href="javascript:;" onclick="chooseTimeZone();" class="btn btn-primary">CONTINUE</a>
+                            </div>
                           </div>
                         </div>
 
-
-                      
                       </div>
 
 

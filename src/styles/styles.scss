@@ -188,6 +188,10 @@ input:focus + label::before {
   background-color: #c73025;
   border-color: #c73025;
 }
+.btn-primary:active {
+  background-color: #c73025;
+  border-color: #c73025;
+}
 .btn-primary:hover {
     color: #fff;
     background-color: $primaryColor;
@@ -595,15 +599,21 @@ input:focus + label::before {
 }
 
 
-#appointmentList .list-group-item {
+.appointments .list-group-item {
   background: 0 !important;
   padding: 0;
   border: none;
   color: #7E7E7E;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-#appointmentList .alert {
+.appointments .list-group-item span {
+  color: #7e7e7e;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.appointments .alert {
   background: #fff0f0!important;
   padding: 0;
   border: none;
@@ -612,4 +622,19 @@ input:focus + label::before {
   border-radius: 6px;
   font-weight: 500;
   margin-top: 1.4rem;
+}
+
+.appointment-information {
+  color: #7E7E7E;
+  font: {
+    weight: 500;
+    size: 13px;
+  }
+}
+
+.title2 {
+  color: #7e7e7e;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
 }
