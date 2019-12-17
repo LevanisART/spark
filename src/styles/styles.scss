@@ -192,6 +192,12 @@ input:focus + label::before {
   background-color: #c73025;
   border-color: #c73025;
 }
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #c73025;
+  border-color: #c73025;
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: $primaryColor;
