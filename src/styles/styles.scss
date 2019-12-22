@@ -181,6 +181,10 @@ input:focus + label::before {
   border-radius: 8px;
   font-family: "Montserrat";
   font-size: 14px;
+  span {
+    color: #fff !important;
+    font-size: 14px;
+  }
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -204,9 +208,13 @@ input:focus + label::before {
     border-color: $primaryColor;
 }
 
+.change-timezone {
+  padding: .8rem 1rem .9rem;
+}
+
 .schedule-buttons {
   .btn {
-    padding: .8rem 1.5rem;
+    padding: .8rem 1.5rem .9rem;
     border-radius: 5px;
     line-height: unset;
     box-shadow: 0 0 8px rgba(0, 0, 0, .12);
@@ -531,6 +539,16 @@ input:focus + label::before {
   margin-top: 1.4rem;
 }
 
+.appointments .alert-warning {
+  background: #FFF8E3!important;
+  span {
+    color: #E5A708;
+  }
+  .alert-icon {
+    margin-top: -1px;
+  }
+}
+
 .appointment-information {
   color: #7E7E7E;
   font: {
@@ -544,6 +562,29 @@ input:focus + label::before {
   line-height: 21px;
   font-weight: 500;
   font-size: 14px;
+}
+
+.appointmentslist {
+  .appointment {
+    padding: 0;
+    &:nth-child(odd) {
+      @media (min-width: 991px) {
+        padding-left: 0;
+        padding-right: 10px;
+      }
+    }
+    &:nth-child(even) {
+      @media (min-width: 991px) {
+        padding-right: 0;
+        padding-left: 10px;
+      }
+    }
+    .appointment-inner {
+      display: flex;
+      border: 1px solid #EBF1F7;
+      border-radius: 4px;
+    }
+  }
 }
 
 
@@ -567,12 +608,40 @@ input:focus + label::before {
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
+  .form-group .time-label {
+    flex: unset;
+    max-width: unset;
+  }
+  .form-group .date-label {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .appointment-time {
+    flex-wrap: wrap;
+    .alert {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .changetimezone-button {
+      padding-left: 0;
+      margin-top: 1rem;
+      flex: unset;
+      max-width: unset;
+      width: unset;
+      .change-timezone {
+        padding: .8rem 1.5rem .9rem;
+      }
+    }
   }
 }
 
@@ -655,6 +724,15 @@ input:focus + label::before {
         width: unset !important;
         padding: 0 25px;
       }
+    }
+  }
+  .appointment-inner {
+    padding: 1rem 1.5rem!important;
+  }
+  .appointment-information {
+    flex-direction: column;
+    .appointment-list-item {
+      margin: .5rem 0 !important;
     }
   }
 }
